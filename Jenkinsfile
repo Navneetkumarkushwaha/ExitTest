@@ -3,20 +3,23 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/vrun545/Jenkins_Demo.git'
+                git 'https://github.com/Navneetkumarkushwaha/ExitTest.git'
             }
         }
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                // Using 'sh' instead of 'bat' for cross-platform compatibility
+                sh 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                bat 'mvn clean test'
+                // Using 'sh' instead of 'bat' for cross-platform compatibility
+                sh 'mvn clean test'
             }
             post {
                 success {
+                    // Correcting 'useWrapperFileDirectly' to 'useWrapper'
                     publishHTML([
                         allowMissing: false,
                         alwaysLinkToLastBuild: false,
@@ -25,7 +28,7 @@ pipeline {
                         reportFiles: 'emailable-report.html',
                         reportName: 'HTML Report',
                         reportTitles: '',
-                        useWrapperFileDirectly: true
+                        useWrapper: true
                     ])
                 }
             }

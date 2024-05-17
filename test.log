@@ -1,2 +1,72 @@
-May 17, 2024 10:57:33 AM tests.TestHomePage verifyHomePageTitle
+May 17, 2024 11:22:38 AM tests.TestHomePage verifyHomePageTitle
 INFO: verifyHomePageTitle Test Started...
+May 17, 2024 11:22:44 AM tests.TestHomePage verifyHomePageTitle
+INFO: verifyHomePageTitle Test completed successfully
+May 17, 2024 11:22:46 AM tests.TestTravelPage VerifyCartPage
+INFO: Verify Travel Page Title Test Started...
+May 17, 2024 11:22:56 AM tests.TestTravelPage VerifyCartPage
+INFO: Verify Travel Page Title Test completed successfully
+May 17, 2024 11:22:56 AM tests.TestTravelPage verifyFlightPageElements
+INFO: verifyFlightPage Elements Test Started...
+May 17, 2024 11:22:56 AM tests.TestTravelPage verifyFlightPageElements
+INFO: verifyTravelPageElements Test completed successfully
+May 17, 2024 11:22:58 AM tests.TestLoginPageElements verifyLoginPageElements
+INFO: verifyLoginPageElements Test Started...
+May 17, 2024 11:23:05 AM tests.TestLoginPageElements verifyLoginPageElements
+INFO: verifyLoginPageElements Test completed successfully
+May 17, 2024 11:23:07 AM tests.TestTermsAndCondition testTermsAndConditions
+INFO: verifyTermsAndConditions Test Started...
+May 17, 2024 11:23:16 AM tests.TestTermsAndCondition testTermsAndConditions
+INFO: verifyTermsAndConditionsPageTitle Test completed successfully
+May 17, 2024 11:23:18 AM tests.TestShopsyPage VerifyShopsyPage
+INFO: VerifyShopsyDashboardTitle Test Started...
+May 17, 2024 11:23:23 AM tests.TestShopsyPage VerifyShopsyPage
+INFO: verifyShopsyDashboardTitle Test completed successfully
+May 17, 2024 11:23:23 AM tests.TestShopsyPage VerifyShopsyQueryFormElements
+INFO: VerifyShopsyQueryFormElements Test Started...
+May 17, 2024 11:23:23 AM tests.TestShopsyPage VerifyShopsyQueryFormElements
+INFO: VerifyShopsyQueryFormElements Test completed successfully
+May 17, 2024 11:23:23 AM tests.TestShopsyPage sendQueryForm
+INFO: Verification of Send Query form Test Started...
+May 17, 2024 11:23:31 AM tests.TestShopsyPage sendQueryForm
+INFO: VerifySendQuery Test completed successfully
+May 17, 2024 11:23:33 AM tests.TestGroceryCategory VerifyGroceryCategory
+INFO: VerifyGroceryCategoryTitle Test Started...
+May 17, 2024 11:23:41 AM tests.TestGroceryCategory VerifyGroceryCategory
+INFO: verifyGroceryPageTitle Test completed successfully
+May 17, 2024 11:23:41 AM tests.TestGroceryCategory VerifySearchProduct
+INFO: VerifySearchProductTitle Test Started...
+May 17, 2024 11:23:46 AM tests.TestGroceryCategory VerifySearchProduct
+INFO: VerifySearchProductTitle Test completed successfully
+May 17, 2024 11:23:48 AM tests.TestVerifyAddToCart verifyAddToCart
+INFO: verifyAddToCart Test Started...
+May 17, 2024 11:24:04 AM tests.TestVerifyAddToCart verifyAddToCart
+INFO: Verified Add to Cart Functionality successfully
+May 17, 2024 11:24:06 AM tests.TestSearchFunctionality testSearchFunctionality
+INFO: verifySearchFunctionality Test Started...
+May 17, 2024 11:24:16 AM tests.TestSearchFunctionality testSearchFunctionality
+INFO: verifySearchFunctionalityTitle Test completed successfully
+May 17, 2024 11:24:17 AM tests.TestCartPage VerifyCartPage
+INFO: Verify Cart Page Title Test Started...
+May 17, 2024 11:24:24 AM tests.TestCartPage VerifyCartPage
+INFO: Verify Cart Page Title Test completed successfully
+May 17, 2024 11:24:26 AM tests.TestInvalidLogin verifyInvalidLogin
+INFO: verifyInvalidLogin Test Started...
+May 17, 2024 11:24:41 AM tests.TestInvalidLogin verifyInvalidLogin
+INFO: verify Invalid Login Test successfully
+May 17, 2024 11:24:42 AM tests.TestSellerPageFunctionalities VerifyBecomeSellerIcon
+INFO: verifySellerPageTitle Test Started...
+May 17, 2024 11:24:53 AM tests.TestSellerPageFunctionalities VerifyBecomeSellerIcon
+INFO: verifySellerPageTitle Test completed successfully
+May 17, 2024 11:24:53 AM tests.TestSellerPageFunctionalities VerifyStartSellingDashboard
+INFO: verifySellerDashboardTitle Test Started...
+May 17, 2024 11:24:56 AM tests.TestSellerPageFunctionalities VerifyStartSellingDashboard
+INFO: verifySellerDashboardTitle Test completed successfully
+May 17, 2024 11:24:56 AM tests.TestSellerPageFunctionalities VerifySellingDashBoardLogin
+INFO: VerifySellingDashBoardLogin Test Started...
+May 17, 2024 11:24:56 AM tests.TestSellerPageFunctionalities VerifySellingDashBoardLogin
+INFO: VerifySellingDashBoardLogin Test completed successfully
+May 17, 2024 11:24:58 AM tests.TestProductDetailsPage verifyProductDetailsPage
+INFO: verifyProductDetails Test Started...
+May 17, 2024 11:25:05 AM tests.TestProductDetailsPage verifyProductDetailsPage
+INFO: verifyProductDetailsPageTitle Test completed successfully
