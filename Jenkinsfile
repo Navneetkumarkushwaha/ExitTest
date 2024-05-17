@@ -1,42 +1,54 @@
 pipeline {
     agent any
+
+    tools {
+        maven 'MAVEN_HOME' // Ensure this matches the Maven version on your Jenkins server
+        jdk 'JAVA_HOME' // Ensure this matches the JDK version on your Jenkins server
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Navneetkumarkushwaha/ExitTest.git'
+                checkout scm
             }
         }
+        
         stage('Build') {
             steps {
-                // Using 'sh' instead of 'bat' for cross-platform compatibility
-                sh 'mvn clean package'
+                bat 'mvn clean install'
             }
         }
+
         stage('Test') {
             steps {
-                // Using 'sh' instead of 'bat' for cross-platform compatibility
-                sh 'mvn clean test'
+                bat 'mvn test'
             }
             post {
-                success {
-                    // Correcting 'useWrapperFileDirectly' to 'useWrapper'
-                    publishHTML([
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: false,
-                        keepAll: false,
-                        reportDir: 'target/surefire-reports/',
-                        reportFiles: 'emailable-report.html',
-                        reportName: 'HTML Report',
-                        reportTitles: '',
-                        useWrapper: true
-                    ])
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                    jacoco execPattern: 'target/jacoco.exec', classPattern: 'target/classes', sourcePattern: 'src/main/java'
                 }
             }
         }
-        stage('Clean up') {
+
+        stage('Package') {
             steps {
-                echo 'Clean up is done'
+                bat 'mvn package'
             }
+        }
+
+        
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Build and deploy successful!'
+        }
+        failure {
+            echo 'Build failed!'
         }
     }
 }
